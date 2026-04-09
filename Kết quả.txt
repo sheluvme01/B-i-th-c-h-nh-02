@@ -1,0 +1,111 @@
+Bài 1:
+                                              review  \
+0  Vừa qua tôi có dùng dịch vụ tại Khách Sạn TTC ...   
+1  Tuy nhiên buffet sáng ở đây không được ngon và...   
+2  Tuy nhiên buffet sáng ở đây không được ngon và...   
+3  Nhìn chung dịch vụ khách sạn cũng tốt, chỉ có ...   
+4  Nhìn chung dịch vụ khách sạn cũng tốt, chỉ có ...   
+
+                                           processed  
+0  [vừa, qua, dùng, dịch, vụ, khách, sạn, ttc, ho...  
+1  [tuy, nhiên, buffet, sáng, đây, không, ngon, c...  
+2  [tuy, nhiên, buffet, sáng, đây, không, ngon, c...  
+3  [nhìn, chung, dịch, vụ, khách, sạn, tốt, chỉ, ...  
+4  [nhìn, chung, dịch, vụ, khách, sạn, tốt, chỉ, ...  
+
+Bài 2:
+Các từ xuất hiện trên 500 lần:
+{'vừa': 762, 'qua': 655, 'dịch': 2286, 'vụ': 3807, 'khách': 5189, 'sạn': 4058, 'hotel': 683, 'đà': 1291, 'lạt': 1078, 'sáng': 847, 'đây': 1853, 'không': 3260, 'chưa': 575, 'lắm': 690, 'nhìn': 693, 'chung': 724, 'tốt': 2260, 'ăn': 1157, 'hợp': 1161, 'vị': 1644, 'nhân': 3208, 'viên': 3186, 'phục': 1567, 'tình': 1051, 'trang': 1015, 'thiết': 835, 'hài': 1366, 'tiện': 3277, 'nghi': 2256, 'đẹp': 1005, 'phòng': 6730, 'chất': 1368, 'lượng': 1205, 'cầu': 540, 'trí': 1754, 'gần': 603, 'cảm': 718, 'ổn': 880, 'để': 591, 'cả': 1628, 'sạch': 3028, 'điểm': 515, 'thuận': 787, 'ốc': 2381, 'rộng': 575, 'nghỉ': 1471
+, 'ngơi': 600, 'thoáng': 669, 'lịch': 635, 'thái': 618, 'độ': 625, 'nhiệt': 963, 'lòng': 1385, 'giá': 2325, 'thân': 642, 'thiện': 674, 'lý': 535, 'nhận': 602, 'mát': 599, 'cấp': 553, 'sự': 678, 'hàng': 639, 'cung': 511, 'đầy': 1856, 'đủ': 1973, 'tương': 640, 'vệ': 1536, 'sinh': 1555, 'gian': 638, 'thứ': 593, 'đều': 561, 'vui': 764, 'vẻ': 760, 'như': 1313, 'ok': 582, 'dụng': 511, 'thoải': 676, 'mái': 687, '1': 683, 'resort': 1346}
+
+Số bình luận theo category:
+category1
+GENERAL            5582
+COMFORT            1373
+CLEANLINESS        1364
+QUALITY            1164
+DESIGN&FEATURES     939
+PRICES              745
+MISCELLANEOUS       335
+STYLE&OPTIONS       267
+Name: count, dtype: int64
+
+Số bình luận theo aspect:
+category2
+HOTEL             3605
+ROOMS             2501
+SERVICE           2301
+ROOM_AMENITIES    1267
+LOCATION           957
+FOOD&DRINKS        696
+FACILITIES         442
+Name: count, dtype: int64
+
+Bài 3:
+Aspect nhiều đánh giá NEGATIVE nhất:
+ROOMS - 515
+
+Aspect nhiều đánh giá POSITIVE nhất:
+HOTEL - 2941
+Bài 4:
+
+Category: GENERAL
+Top 5 POSITIVE words: [('khách', 2425), ('phòng', 2249), ('vụ', 2020), ('nhân', 1848), ('sạn', 1826)]
+Top 5 NEGATIVE words: [('không', 371), ('phòng', 337), ('khách', 274), ('sạn', 199), ('nhân', 149)]
+
+Category: QUALITY
+Top 5 POSITIVE words: [('phòng', 332), ('chất', 326), ('lượng', 312), ('khách', 269), ('sạn', 235)]
+Top 5 NEGATIVE words: [('không', 276), ('phòng', 246), ('cũ', 158), ('khách', 144), ('sạn', 119)]
+
+Category: STYLE&OPTIONS
+Top 5 POSITIVE words: [('sáng', 93), ('ăn', 78), ('bữa', 52), ('món', 51), ('ngon', 41)]
+Top 5 NEGATIVE words: [('sáng', 122), ('ăn', 100), ('món', 95), ('không', 88), ('bữa', 61)]
+
+Category: DESIGN&FEATURES
+Top 5 POSITIVE words: [('phòng', 530), ('đẹp', 266), ('sạch', 234), ('không', 228), ('khách', 224)]
+Top 5 NEGATIVE words: [('phòng', 245), ('không', 161), ('nhỏ', 83), ('khách', 70), ('sạn', 58)]
+
+Category: CLEANLINESS
+Top 5 POSITIVE words: [('phòng', 1186), ('sạch', 997), ('tiện', 552), ('ốc', 498), ('nghi', 482)]
+Top 5 NEGATIVE words: [('phòng', 203), ('không', 171), ('sạch', 96), ('sinh', 76), ('vệ', 73)]
+
+Category: COMFORT
+Top 5 POSITIVE words: [('lòng', 541), ('hài', 530), ('khách', 440), ('phòng', 436), ('sạn', 382)]
+Top 5 NEGATIVE words: [('phòng', 215), ('không', 197), ('khách', 107), ('sạn', 81), ('lòng', 71)]
+
+Category: PRICES
+Top 5 POSITIVE words: [('giá', 602), ('cả', 411), ('hợp', 320), ('vụ', 312), ('phòng', 271)]
+Top 5 NEGATIVE words: [('giá', 56), ('không', 47), ('phòng', 30), ('tiền', 23), ('khách', 21)]
+
+Category: MISCELLANEOUS
+Top 5 POSITIVE words: [('khách', 26), ('sạn', 20), ('phòng', 17), ('không', 11), ('ăn', 10)]
+Top 5 NEGATIVE words: [('không', 187), ('phòng', 145), ('khách', 110), ('nước', 78), ('sạn', 67)]
+
+Bài 5:
+
+Category: GENERAL
+Top 5 từ liên quan nhất: [('khách', np.float64(354.27228216736444)), ('phòng', np.float64(326.5875353221197)), ('vụ', np.float64(317.21969571662237)), ('sạn', np.float64(299.39642505653046)), ('nhân', np.float64(293.82511106550953))]
+
+Category: QUALITY
+Top 5 từ liên quan nhất: [('phòng', np.float64(71.62670969463412)), ('chất', np.float64(71.20331437286725)), ('lượng', np.float64(69.65206476168572)), ('khách', np.float64(64.2492437292158)), ('sạn', np.float64(59.59796041295203))]
+
+Category: STYLE&OPTIONS
+Top 5 từ liên quan nhất: [('sáng', np.float64(25.97318159613572)), ('ăn', np.float64(25.419390479562896)), ('món', np.float64(24.26616036870028)), ('bữa', np.float64(21.776905025261332)), ('không', np.float64(17.99855682727769))]
+
+Category: DESIGN&FEATURES
+Top 5 từ liên quan nhất: [('phòng', np.float64(81.03515540525767)), ('không', np.float64(54.657639795822526)), ('đẹp', np.float64(52.68992834036823)), ('sạch', np.float64(48.66040629077483)), ('rộng', np.float64(46.55518626996979))]
+
+Category: CLEANLINESS
+Top 5 từ liên quan nhất: [('phòng', np.float64(133.87430636833705)), ('sạch', np.float64(117.92197869135289)), ('tiện', np.float64(89.86254164194382)), ('ốc', np.float64(86.5416202056202)), ('nghi', np.float64(86.03468439278991))]
+
+Category: COMFORT
+Top 5 từ liên quan nhất: [('lòng', np.float64(106.60768669904284)), ('hài', np.float64(105.77589060785799)), ('phòng', np.float64(87.88843992915714)), ('khách', np.float64(82.81218943039526)), ('đây', np.float64(77.68642622476864))]
+
+Category: PRICES
+Top 5 từ liên quan nhất: [('giá', np.float64(69.55514167457213)), ('cả', np.float64(59.9753207364531)), ('hợp', np.float64(56.02946271080971)), ('vụ', np.float64(46.02647083280422)), ('lý', np.float64(40.64811756804423))]
+
+Category: MISCELLANEOUS
+Top 5 từ liên quan nhất: [('không', np.float64(22.662939782972792)), ('phòng', np.float64(21.173510541814125)), ('khách', np.float64(17.048760254973455)), ('nước', np.float64(14.47233914281403)), ('sạn', np.float64(11.986057169850234))]
+
+
+
